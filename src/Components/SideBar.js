@@ -37,28 +37,9 @@ const SideBar = () => {
 
         return (
             <>
-                <div className= "side-panel" >
-
-                    <div className=  {sidebar} >
-
-                        <i class="fa-solid fa-angle-left" onClick={SidebarHandler}></i>
-
-                        <ul className= "sidebar-icons">
-                            <li><a href="#"><i class="fa-solid fa-house icon"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass icon"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-readme icon"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-bookmark icon"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-gear icon"></i></a></li>
-                        </ul>
-
-                    </div>
-
-                </div>
 
 
-
-
-            {/* header Section */}
+                {/* header Section */}
 
 
                 <div className="header">
@@ -83,18 +64,45 @@ const SideBar = () => {
 
                     </ul>
 
-                    </div>
-
                     <div onClick={NavebarHandler} className="angle-down">
 
+                        <i className= {icon}  onClick={IconChangeHandler}></i>
+
+                    </div>
+
+                    
+                </div>
+
+                {/* <div onClick={NavebarHandler} className="angle-down">
+
                     <i className= {icon}  onClick={IconChangeHandler}></i>
+
+                </div> */}
+                    
+
+
+
+                <div className= "side-panel" >
+
+                    <div className=  {sidebar} >
+
+                        <i class="fa-solid fa-angle-left" onClick={SidebarHandler}></i>
+
+                        <ul className= "sidebar-icons">
+                            <li><a href="#"><i class="fa-solid fa-house icon"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-magnifying-glass icon"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-readme icon"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-bookmark icon"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-gear icon"></i></a></li>
+                        </ul>
+
+                    </div>
 
                 </div>
 
             </>
 
             
-
         )
 }
 
